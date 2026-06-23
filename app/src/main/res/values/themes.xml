@@ -1,0 +1,17 @@
+<resources>
+    <!-- Normal App Theme -->
+    <style name="Base.Theme.SMS" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#6200EE</item>
+    </style>
+
+    <style name="Theme.SMS" parent="Base.Theme.SMS" />
+
+    <!-- Splash Screen Theme -->
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#FFFFFF</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_open_book_small</item>
+        <!-- reduce splash icon size to avoid clipping -->
+        <item name="splashScreenIconSize">72dp</item>
+        <item name="postSplashScreenTheme">@style/Theme.SMS</item>
+    </style>
+</resources>
